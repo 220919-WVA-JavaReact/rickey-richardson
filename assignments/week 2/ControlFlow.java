@@ -97,8 +97,19 @@ This method should return an array of integer where all of the elements have bee
 public static int[] transformIntArr(int[] intArr){
     
     // logic
+    // I couldn't get this one to work properly, but I know my logic is right
+    int newArr[] = new int[intArray.length] ;
+    int i;
+    for (i = 0; i < intArr.length; i++){
+        if (intArr[i] % 3 == 0) {
+            newArr[i] = intArr[i] * 2;
+        } else {
+            newArr[i] = intArr[i];
+        }
+    }
 
-    return new int[5];
+
+    return newArr;
 }
 
 /*
