@@ -1,0 +1,47 @@
+React
+    - A JavaScript library used for building user interfaces
+        - lightweight
+            - meant to be used with other modules of the user's choice (ie: React Router)
+        - React DOM, React Native, React VR
+    - Declarative
+        - using React, we describe the desired state using JSX
+            - React handles the rest
+    - Not a framework
+        - Technically, React is a library and not a framework
+        - Frameworks (like Vue, Angular) have their "right" way of doing things
+        - "forced" to do things the way they want/use their dependencies
+        - Frameworks generally "call your code"
+    - Component based architecture
+        - breaking down UI into smaller reusable component
+            - Inject/remove views and functionality of the same page rather than requesting a new one
+        - Single Page Application (SPA)
+            - Design Pattern
+            - no longer need to fully reload the webpage with another view (ONLY ONE VIEW)
+            - web pack 
+                - static module bundler for modern JavaScript applications
+    - Virtual DOM 
+        - used to render elements more efficiently than traditional DOM manipulation
+        - Keeps virtual views in memory
+            - updates/changes made are compared to the virtual DOM representation in memory
+            - the differential is calculated - Reconciliation
+            - only the necessary changes are made to the DOM 
+- Component
+    - reusable piece of code / "unit" in React
+    - two main types of components
+        - Function components
+        - Class components 
+
+        - Function components are preferred
+            - simpler syntax
+            - less code to transpile
+            - "cleaner"
+- Routing 
+    - allows us to swap components dynamically based on the URL path of the application
+    - react router dom package
+    - defined within <BrowserRouter></BrowswerRouter>
+    - defining path to navigate to using the link component 
+        - ie: <Link to="/new"> </Link>
+    - <Routes></Routes>
+        - where routes are injected using <Route> </Route>
+
+        
