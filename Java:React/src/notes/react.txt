@@ -25,6 +25,12 @@ React
             - updates/changes made are compared to the virtual DOM representation in memory
             - the differential is calculated - Reconciliation
             - only the necessary changes are made to the DOM 
+
+JSX 
+    - JavaScript XML
+    - syntax extension of JS, looks like HTML but is JS function call   
+        - Compiled using Babel
+    -lowercase tags are HTML 
 - Component
     - reusable piece of code / "unit" in React
     - two main types of components
@@ -43,5 +49,13 @@ React
         - ie: <Link to="/new"> </Link>
     - <Routes></Routes>
         - where routes are injected using <Route> </Route>
+
+Props
+    - properties are used to pass data down to a child component 
+        - look like HTML attributes 
+        - immutable/read-only objects
+            - React's philosophy, components should manage their own state, but not their props 
+            - To manipulate parent's state, a setter function must be passed alongside as props 
+            
 
         
